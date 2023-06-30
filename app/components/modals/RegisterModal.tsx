@@ -5,7 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-import useRegisterModal from "../hooks/useRegisterModal";
+import useRegisterModal from "../../hooks/useRegisterModal";
 import Modal from "./Modal";
 import Heading from "../Heading";
 import Input from "../inputs/Input";
@@ -51,7 +51,7 @@ const RegisterModal = () => {
     text-black
     "
     >
-      <Heading title="Welcome to Next BnB" subtitle="Create an account!" />
+      <Heading title="Welcome to Keeper" subtitle="Create an account!" />
       <Input
         id="email"
         label="Email"
