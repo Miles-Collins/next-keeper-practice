@@ -1,25 +1,26 @@
 "use client";
 
-import { useCallback, useState } from "react";
-import Avatar from "../Avatar";
-import CreateMenu from "./CreateMenu";
 import { AiOutlineMenu } from "react-icons/ai";
-import useRegisterModal from "../hooks/useRegisterModal";
+import Avatar from "../Avatar";
+import { useCallback, useState } from "react";
 import MenuItem from "./MenuItem";
+import useRegisterModal from "@/app/components/hooks/useRegisterModal";
 
 const UserMenu = () => {
   const registerModal = useRegisterModal();
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
   }, []);
+
   return (
     <div className="relative">
       <div className="flex flex-row items-center gap-3">
         <div
           onClick={() => {}}
           className="
-      hidden
+        hidden
         md:block
         text-sm
         font-semibold
@@ -31,12 +32,12 @@ const UserMenu = () => {
         cursor-pointer
         "
         >
-          <CreateMenu />
+          Keep
         </div>
         <div
           onClick={toggleOpen}
           className="
-         p-4
+        p-4
         md:py-1
         md:px-2
         border-[1px]
@@ -70,7 +71,7 @@ const UserMenu = () => {
         right-0
         top-12
         text-sm
-      "
+        "
         >
           <div className="flex flex-col cursor-pointer">
             <>
